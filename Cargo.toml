@@ -1,0 +1,23 @@
+[package]
+name = "unicode-display-width"
+version = "0.2.0"
+authors = ["James Lanska <65431054+jameslanska@users.noreply.github.com>"]
+edition = "2021"
+description = "Unicode 15.1.0 compliant utility for determining the number of columns required to display an arbitrary string"
+keywords = ["Unicode", "wcwidth", "wcswidth", "width", "east-asian-width"]
+repository = "https://github.com/jameslanska/unicode-display-width/"
+license = "MIT"
+readme = "README.md"
+categories = ["text-processing", "text-editors"]
+exclude = [".github/", "docs/", ".vscode/", "generate_ranges/"]
+
+[dependencies]
+unicode-segmentation = "1.10.1"
+
+[dev-dependencies]
+criterion = { version = "0.5.1", features = ["html_reports"] }
+test-case = "3.2.1"
+
+[[bench]]
+name = "bench"
+harness = false

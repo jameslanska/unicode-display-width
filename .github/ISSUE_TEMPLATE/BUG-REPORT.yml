@@ -1,0 +1,36 @@
+name: "🐛 Bug Report"
+description: Create a new ticket for a bug.
+title: "🐛 [BUG] - <title>"
+labels: ["bug"]
+body:
+    - type: textarea
+      id: description
+      attributes:
+          label: "Description"
+          description: Please enter an explicit description of your issue
+          placeholder: Short and explicit description of your incident...
+      validations:
+          required: true
+    - type: textarea
+      id: text_to_reproduce
+      attributes:
+          label: "text that causes the issue"
+          description: "Please paste in the exact text that causes the issue."
+      validations:
+          required: true
+    - type: textarea
+      id: reproduction_steps
+      attributes:
+          label: "Reproduction steps"
+          description: Please enter the exact steps that reproduce the issue
+          value: |
+              See [How to create a Minimal, Complete, and Verifiable example](https://stackoverflow.com/help/mcve)
+      validations:
+          required: true
+    - type: input
+      id: crate_version
+      attributes:
+          label: "Unicode Display Width Version"
+          description: Which version of the crate are you using?
+      validations:
+          required: true
