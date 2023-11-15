@@ -1,6 +1,6 @@
 [package]
 name = "unicode-display-width"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["James Lanska <65431054+jameslanska@users.noreply.github.com>"]
 edition = "2021"
 description = "Unicode 15.1.0 compliant utility for determining the number of columns required to display an arbitrary string"

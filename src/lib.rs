@@ -48,6 +48,11 @@ pub fn is_double_width(c: char) -> bool {
 /// Returns either `1` or `2`
 fn get_grapheme_width(grapheme_cluster: &str) -> u64 {
     for scalar_value in grapheme_cluster.chars() {
+        // emoji style variation selector
+        if scalar_value == '\u{FE0F}' {
+            return 2;
+        }
+
         if is_double_width(scalar_value) {
             return 2;
         }
@@ -87,6 +92,9 @@ mod test {
     }
 
     #[test_case("🛡", 1; "length 1 grapheme")]
+    #[test_case("\u{2764}", 1; "Heavy Black Heart emoji")]
+    #[test_case("\u{2764}\u{FE0F}", 2; "Heavy Black Heart emoji with emoji style variation selector in Hex representation")]
+    #[test_case("❤️", 2; "Heavy Black Heart emoji with emoji style variation selector")] // VS Code doesn't seem to support variation selectors
     #[test_case("✅", 2; "length 2 grapheme")]
     #[test_case("👨‍👩‍👧‍👧", 2; "grapheme composed of multiple emojis, at least one of which is length 2")]
     #[test_case("test test", 9; "ASCII text")]

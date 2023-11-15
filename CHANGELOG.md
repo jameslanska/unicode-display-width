@@ -7,3 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## [0.2.0] - 2023-10-23
 
 - Initial release
+
+## [0.3.0] - 2023-10-23
+
+- Fix "emoji style" variation selector support (#1)

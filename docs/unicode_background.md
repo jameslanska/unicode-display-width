@@ -84,6 +84,8 @@ The use of an emoji base followed by a variation selector is called a [variation
 
 The `U+FE0F` variation selector requests the "emoji style" which is typically colored.  `U+FE0E` for the text style (black and white).
 
+For example, the "Heavy Black Heart" Unicode code point U+2764 "❤" is often part of a variation sequence.  With the "emoji style" variation selector, it becomes the red heart emoji "❤️".  Note that the default VS Code fonts may not properly support variation selectors.  `U+2764` was added to Unicode 1.1 in 1993 with a "Neutral" East Asian Width.  The variation sequence was added to Emoji 1.0 in 2015.
+
 Unicode Display Width assumes that any grapheme with U+FE0F has double width.
 
 ## Further Reading

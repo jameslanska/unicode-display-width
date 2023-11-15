@@ -21,3 +21,4 @@ If you have recommendations for font combinations to create the monospace effect
 - [A Look into a terminal emulator's text stack by Christian Parpart](https://dev.to/christianparpart/look-into-a-terminal-emulator-s-text-stack-3poe)
 - [kitty wcwidth related GitHub issues](https://github.com/kovidgoyal/kitty/issues?q=is%3Aissue+wcwidth+)
 - [zsh width code](https://github.com/zsh-users/zsh/blob/70320635b4b50b1e84f70e17bf40f107d140bdcf/Src/wcwidth9.h#L7)
+- [saneterm motivation](https://github.com/nmeum/saneterm#motivation)
