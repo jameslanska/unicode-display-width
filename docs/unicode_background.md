@@ -41,7 +41,7 @@ This approach sidesteps the issue of combining marks and eliminates the possibil
 
 ## Ambiguous Width
 
-The [Unicode Standard Annex /#11](https://www.unicode.org/reports/tr11/tr11-11.html) describes *ambiguous width* as follows:
+The [Unicode Standard Annex \#11](https://www.unicode.org/reports/tr11/tr11-11.html) describes *ambiguous width* as follows:
 
 > Ambiguous width characters are all those characters that can occur as fullwidth characters in any of a number of East Asian legacy character encodings. They have a “resolved” width of either narrow or wide depending on the context of their use. If they are not used in the context of the specific legacy encoding to which they belong, their width resolves to narrow. Otherwise, it resolves to fullwidth or halfwidth. The term context as used here includes extra information such as explicit markup, knowledge of the source code page, font information, or language and script identification. For example:
 >
