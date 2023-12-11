@@ -14,7 +14,7 @@ Determining the width of an arbitrary string is inherently difficult because the
 
 ## East Asian Width Property
 
-The [Unicode Standard Annex /#11](https://www.unicode.org/reports/tr11/tr11-11.html) defines the East Asian Width property on Unicode *code points* with the possible values of
+The [Unicode Standard Annex \#11](https://www.unicode.org/reports/tr11/tr11-11.html) defines the East Asian Width property on Unicode *code points* with the possible values of
 
 - `W` (Wide)
 - `Na` (Narrow)
