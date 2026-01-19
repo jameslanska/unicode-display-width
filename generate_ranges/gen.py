@@ -6,7 +6,7 @@ from typing import Generator
 from urllib.request import urlopen
 from pathlib import Path
 
-VERSION = "15.1.0"
+VERSION = "16.0.0"
 
 EAW_URL = f"https://unicode.org/Public/{VERSION}/ucd/EastAsianWidth.txt"
 EMOJI_DATA_URL = f"https://unicode.org/Public/{VERSION}/ucd/emoji/emoji-data.txt"
@@ -23,7 +23,7 @@ EMOJI_DATA_URL = f"https://unicode.org/Public/{VERSION}/ucd/emoji/emoji-data.txt
 #      Plane 2 (Supplementary Ideographic Plane): U+20000..U+2FFFD
 #      Plane 3 (Tertiary Ideographic Plane):      U+30000..U+3FFFD
 #
-WIDE_UNASSIGNED_RANGES = [
+WIDE_UNASSIGNED_RANGES: list[tuple[int, int]] = [
     (0x3400, 0x4DBF),
     (0x4E00, 0x9FFF),
     (0xF900, 0xFAFF),

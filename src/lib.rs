@@ -2,7 +2,7 @@
 
 mod code_point_ranges;
 
-use code_point_ranges::{CodePointRange, ASCII_TABLE, DOUBLEWIDE_TABLE};
+use code_point_ranges::{ASCII_TABLE, CodePointRange, DOUBLEWIDE_TABLE};
 use unicode_segmentation::UnicodeSegmentation;
 
 /// Check if char `c` is in array of code point ranges using binary search.
@@ -113,7 +113,7 @@ mod test {
     #[test_case("ര്‍", 1; "Indic text with zero width joiner 3")]
     #[test_case(
         "\u{0924}\u{094D}\u{200D}\u{0928}",
-        2;
+        1;
         "Half letter form" // https://www.unicode.org/faq/indic.html
     )]
     #[test_case(

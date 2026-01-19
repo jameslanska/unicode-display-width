@@ -11,3 +11,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## [0.3.0] - 2023-10-23
 
 - Fix "emoji style" variation selector support (#1)
+
+## [0.4.0] - Unreleased
+
+- Update to Unicode 16.0.0
+- Update unicode-segmentation to 1.12.0

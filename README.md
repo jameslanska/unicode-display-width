@@ -2,7 +2,7 @@
 
 # Unicode Display Width
 
-A safe, performant Rust crate for determining the number of columns required to display an arbitrary string.  This conforms to [Unicode 15.1.0](https://www.unicode.org/versions/Unicode15.1.0/) and handles grapheme clusters correctly.
+A safe, performant Rust crate for determining the number of columns required to display an arbitrary string.  This conforms to [Unicode 16.0.0](https://www.unicode.org/versions/Unicode16.0.0/) and handles grapheme clusters correctly.
 
 ```rust
 use unicode_display_width::width;

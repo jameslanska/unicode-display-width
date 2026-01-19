@@ -22,24 +22,26 @@ Private use ranges are assumed to be width one, so they are ignored.
 
 ## Unassigned Code Point Ranges
 
-The unassigned code points in the following blocks default to "W":
+From [EastAsianWidth-16.0.0.txt](https://www.unicode.org/Public/16.0.0/ucd/EastAsianWidth.txt):
 
-- CJK Unified Ideographs Extension A: U+3400..U+4DBF
-- CJK Unified Ideographs:             U+4E00..U+9FFF
-- CJK Compatibility Ideographs:       U+F900..U+FAFF
-
-All undesignated code points in Planes 2 (Supplementary Ideographic Plane) and 3 (Tertiary Ideographic Plane), whether inside or outside of allocated blocks, default to "W":
-
-- Plane 2: U+20000..=U+2FFFF
-- Plane 3: U+30000..=U+3FFFF
+> The unassigned code points in the following blocks default to "W":
+>
+> - CJK Unified Ideographs Extension A: U+3400..U+4DBF
+> - CJK Unified Ideographs:             U+4E00..U+9FFF
+> - CJK Compatibility Ideographs:       U+F900..U+FAFF
+>
+> All undesignated code points in Planes 2 (Supplementary Ideographic Plane) and 3 (Tertiary Ideographic Plane), whether inside or outside of allocated blocks, default to "W":
+>
+> - Plane 2: U+20000..=U+2FFFD
+> - Plane 3: U+30000..=U+3FFFD
 
 ```rust
 WIDE_UNASSIGNED_RANGES: &[CodePointRange] = &[
     0x3400..=0x4DBF,
     0x4E00..=0x9FFF,
     0xF900..=0xFAFF,
-    0x20000..=0x2FFFF,
-    0x30000..=0x3FFFF,
+    0x20000..=0x2FFFD,
+    0x30000..=0x3FFFD,
 ]
 ```
 
